@@ -3,9 +3,12 @@
 #include <vector>
 using namespace std;
 
-
-
+struct nb{
+    int int_a1;
+    float fl_a1;
+};
 void calc_if_basic(int ifpick){
+  
     int a1;int a2;
     int c1;
     if(ifpick == 0){
@@ -31,15 +34,13 @@ void calc_if_basic(int ifpick){
         c1 = a1 / a2 ;
         cout << a1 << " / "<< a2 <<" = " << c1 << endl;
     }
-    else{
-       
-    }
+    else{}
 }
 void chosse(int x){
     cin >> x;
     int pick;
     switch(x){
-        case 1:
+        case 1:// + - * /
         cout << "pick pls 1 to 4 +-*/" << endl;
         cin >> pick;
         calc_if_basic(pick);
@@ -49,8 +50,9 @@ void chosse(int x){
     }
 }
 int main(){
-    int sw;
+    nb ttt;
+    ttt.int_a1;
     cout << "1 - > xxxx feature not yet available" << endl;
-    chosse(sw);
+    chosse(ttt.int_a1);
     return 0;
 }
