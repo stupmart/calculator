@@ -3,29 +3,46 @@
 #include <vector>
 using namespace std;
 
-void calcp(int ifpick){
-    
-    int a1;int a2;int c1;
-    cout << "nhap xong if pick r" << endl;
-    if(ifpick = 1){
-        cout << "nhap em owi" << endl;
-        cin >> a1 >> a2;
 
+
+void calc_if_basic(int ifpick){
+    int a1;int a2;
+    int c1;
+    if(ifpick == 0){
+        cout << "after update 0.1.0" << endl;
+    }else if(ifpick == 1){
+        cout << "you pick 1" << endl;
+        cin >> a1 >> a2;
         c1 = a1 + a2;
         cout << c1 << endl;
-    }else{
+    }else if(ifpick == 2){
+        cout << "you pick 2" << endl;
+        cin >> a1 >> a2;
+        c1 = a1 - a2 ;
+        cout << a1 << " - "<< a2 <<" = " << c1 << endl;
+    }else if(ifpick == 3){
+        cout << "you pick 3" << endl;
+        cin >> a1 >> a2;
+        c1 = a1 * a2 ;
+        cout << a1 << " x "<< a2 <<" = " << c1 << endl;
+    }else if(ifpick == 4){
+        cout << "you pick 4" << endl;
+        cin >> a1 >> a2;
+        c1 = a1 / a2 ;
+        cout << a1 << " / "<< a2 <<" = " << c1 << endl;
+    }
+    else{
        
     }
 }
-void calc(int sw_cs){
-    cin >> sw_cs;
-    
+void chosse(int x){
+    cin >> x;
     int pick;
-    cout << "nhap pick di em trai" << endl;
-    cin >> pick;
-    switch(sw_cs){
+    switch(x){
         case 1:
-        calcp(pick);
+        cout << "pick pls 1 to 4 +-*/" << endl;
+        cin >> pick;
+        calc_if_basic(pick);
         break;
         default:
         break;
@@ -33,6 +50,7 @@ void calc(int sw_cs){
 }
 int main(){
     int sw;
-    calc(sw);
+    cout << "1 - > xxxx feature not yet available" << endl;
+    chosse(sw);
     return 0;
 }
