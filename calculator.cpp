@@ -3,38 +3,38 @@
 #include <vector>
 using namespace std;
 
-struct nb{
-    int int_a1;
-    float fl_a1;
-};
-void calc_if_basic(int ifpick){
-  
-    int a1;int a2;
-    int c1;
-    if(ifpick == 0){
-        cout << "after update 0.1.0" << endl;
-    }else if(ifpick == 1){
-        cout << "you pick 1" << endl;
-        cin >> a1 >> a2;
-        c1 = a1 + a2;
-        cout << c1 << endl;
-    }else if(ifpick == 2){
-        cout << "you pick 2" << endl;
-        cin >> a1 >> a2;
-        c1 = a1 - a2 ;
-        cout << a1 << " - "<< a2 <<" = " << c1 << endl;
-    }else if(ifpick == 3){
-        cout << "you pick 3" << endl;
-        cin >> a1 >> a2;
-        c1 = a1 * a2 ;
-        cout << a1 << " x "<< a2 <<" = " << c1 << endl;
-    }else if(ifpick == 4){
-        cout << "you pick 4" << endl;
-        cin >> a1 >> a2;
-        c1 = a1 / a2 ;
-        cout << a1 << " / "<< a2 <<" = " << c1 << endl;
+struct {
+    int int_;
+    float float_;
+    vector <int> int_vec;
+}pick,test;
+// chosse vector
+
+void arr_or_not(int pick_arr,vector <float> number_float1){
+     float sum =0 ;
+    float n = 0;
+    for(int i = 0; i < pick_arr;i++){
+        cin >> n;
+        number_float1.push_back(n);
     }
-    else{}
+    for(float n : number_float1 ){
+            sum += n ;
+        }
+        cout << "you result = "<<sum;
+}
+void calc_if_basic(int ifpick){
+  vector <float> number_float;
+  int pick_arr;
+  
+    if(ifpick == 0){
+  
+  }else if(ifpick == 1){
+    cout << "you pick + " << " choose number for vector "<< endl;
+    cin >> pick_arr;
+    arr_or_not(pick_arr,number_float);
+  }
+   else{} 
+   
 }
 void chosse(int x){
     cin >> x;
@@ -50,9 +50,9 @@ void chosse(int x){
     }
 }
 int main(){
-    nb ttt;
-    ttt.int_a1;
+    pick.int_;
     cout << "1 - > xxxx feature not yet available" << endl;
-    chosse(ttt.int_a1);
+    
+    chosse(pick.int_);
     return 0;
 }

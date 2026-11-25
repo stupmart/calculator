@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Trang-1" id="6J9X-nAEc1ruQ_aqGwwj">
-    <mxGraphModel dx="1051" dy="1126" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="351" dy="648" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -88,8 +88,8 @@
         <mxCell id="Tj0kPw6ZMxPIWtxwDk7--102" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="else&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="110" x="2610" y="890" as="geometry" />
         </mxCell>
-        <mxCell id="Tj0kPw6ZMxPIWtxwDk7--103" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="void&lt;div&gt;vector&lt;/div&gt;" vertex="1">
-          <mxGeometry height="80" width="80" x="2790" y="620" as="geometry" />
+        <mxCell id="Tj0kPw6ZMxPIWtxwDk7--103" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6cc;strokeColor=#d79b00;" value="void&lt;div&gt;vector&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="80" x="2790" y="270" as="geometry" />
         </mxCell>
         <mxCell id="Tj0kPw6ZMxPIWtxwDk7--104" edge="1" parent="1" source="Tj0kPw6ZMxPIWtxwDk7--105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="Tj0kPw6ZMxPIWtxwDk7--96">
           <mxGeometry relative="1" as="geometry" />
@@ -124,11 +124,17 @@
         <mxCell id="Tj0kPw6ZMxPIWtxwDk7--114" edge="1" parent="1" source="Tj0kPw6ZMxPIWtxwDk7--96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.014;entryY=0.439;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="Tj0kPw6ZMxPIWtxwDk7--75">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="LvaVcrWuAl8H6nWajtED-2" edge="1" parent="1" source="Tj0kPw6ZMxPIWtxwDk7--115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="LvaVcrWuAl8H6nWajtED-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Tj0kPw6ZMxPIWtxwDk7--115" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="process +-*/" vertex="1">
           <mxGeometry height="60" width="120" x="2790" y="790" as="geometry" />
         </mxCell>
         <mxCell id="Tj0kPw6ZMxPIWtxwDk7--116" edge="1" parent="1" source="Tj0kPw6ZMxPIWtxwDk7--103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.336;entryY=-0.005;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;labelPadding=0 4;" target="Tj0kPw6ZMxPIWtxwDk7--115">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LvaVcrWuAl8H6nWajtED-1" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="cout &amp;lt;&amp;lt; result" vertex="1">
+          <mxGeometry height="60" width="120" x="3050" y="990" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
