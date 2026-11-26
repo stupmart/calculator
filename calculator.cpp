@@ -13,17 +13,17 @@ struct {
 void arr_or_not(int pick_size,vector <float> number_float){
     float sum =0 ; float n = 0;
     for(int i = 0; i < pick_size;i++){
+        cout << "input number " << i + 1 << endl; 
         cin >> n;
         number_float.push_back(n);}
     for(float i : number_float ){
             sum += n ;}
-        cout << "you result = "<<sum;
+        cout << "you result = "<< sum << endl;
 }
 void calc_if_basic(int ifpick){
   vector <float> number_float_calc_if_basic;
   int pick_size1;
-  
-    if(ifpick == 0){}
+    if(ifpick == 0){cout << "not available" << endl;}
     else if(ifpick == 1){
     cout << "you pick + " << " choose number for vector "<< endl;
     cin >> pick_size1;

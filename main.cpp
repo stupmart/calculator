@@ -11,8 +11,11 @@ struct {
 
 int main(){
     pick.int_;
+   
     cout << "1 - > xxxx feature not yet available" << endl;
-    cout << "hello im gay" << endl;
-    chosse(pick.int_);
+    do{chosse(pick.int_);
+    cout<<"pick again pick 0 is stop pick 1 is continue"<< endl;
+    cin >> pick.int_;
+    }while(pick.int_ == 1);
     return 0;
 }
