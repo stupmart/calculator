@@ -1,6 +1,6 @@
-
 #include <iostream>
 #include <vector>
+#include "calculator.h"
 using namespace std;
 
 struct {
@@ -10,28 +10,24 @@ struct {
 }pick,test;
 // chosse vector
 
-void arr_or_not(int pick_arr,vector <float> number_float1){
-     float sum =0 ;
-    float n = 0;
-    for(int i = 0; i < pick_arr;i++){
+void arr_or_not(int pick_size,vector <float> number_float){
+    float sum =0 ; float n = 0;
+    for(int i = 0; i < pick_size;i++){
         cin >> n;
-        number_float1.push_back(n);
-    }
-    for(float n : number_float1 ){
-            sum += n ;
-        }
+        number_float.push_back(n);}
+    for(float i : number_float ){
+            sum += n ;}
         cout << "you result = "<<sum;
 }
 void calc_if_basic(int ifpick){
-  vector <float> number_float;
-  int pick_arr;
+  vector <float> number_float_calc_if_basic;
+  int pick_size1;
   
-    if(ifpick == 0){
-  
-  }else if(ifpick == 1){
+    if(ifpick == 0){}
+    else if(ifpick == 1){
     cout << "you pick + " << " choose number for vector "<< endl;
-    cin >> pick_arr;
-    arr_or_not(pick_arr,number_float);
+    cin >> pick_size1;
+    arr_or_not(pick_size1,number_float_calc_if_basic);
   }
    else{} 
    
@@ -48,11 +44,4 @@ void chosse(int x){
         default:
         break;
     }
-}
-int main(){
-    pick.int_;
-    cout << "1 - > xxxx feature not yet available" << endl;
-    cout << "hello im gay" << endl;
-    chosse(pick.int_);
-    return 0;
 }
