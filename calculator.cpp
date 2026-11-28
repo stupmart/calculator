@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+#include <map>
+#include <string>
 #include "calculator.h"
 using namespace std;
 
@@ -9,7 +11,8 @@ struct {
     vector <int> int_vec;
 }pick,test;
 // process
-void arr_or_not(int pick_size,vector <float> number_float){
+void arr_or_not(int pick_size){
+    vector <float> number_float;
     float sum =0 ; float n = 0;
     for(int i = 0; i < pick_size;i++){
         cout << "input number " << i + 1 << endl; 
@@ -21,15 +24,10 @@ void arr_or_not(int pick_size,vector <float> number_float){
 }
 // chosse +-*/
 void calc_if_basic(int ifpick){
-  vector <float> number_float_calc_if_basic;
   int pick_size1;
-    if(ifpick == 0){cout << "not available" << endl;}
-    else if(ifpick == 1){
-    cout << "you pick +&&- " << " choose number for vector "<< endl;
-    cout << "If you want to use subtraction, place a minus sign (-) before the number." << endl;
-    cin >> pick_size1;
-    arr_or_not(pick_size1,number_float_calc_if_basic);}
-   else{} 
+  cout << "choose size" << endl;
+  cin >> pick_size1;
+    arr_or_not(pick_size1);
 }
 //chosse calc
 void chosse(int x){
